@@ -1,0 +1,20 @@
+# Core RAG stack
+langchain-core>=1.0,<2.0
+langchain-groq>=1.0,<2.0
+langchain-text-splitters>=1.0,<2.0
+langgraph>=1.0,<2.0
+pinecone>=7.0,<8.0   # also provides hosted embeddings (Pinecone Inference)
+pypdf>=5.0
+
+# Groq SDK (imported directly for error handling)
+groq>=0.30
+
+requests
+# API layer
+fastapi>=0.115
+uvicorn>=0.30
+pydantic>=2.7
+
+# Configuration and test client
+python-dotenv>=1.0
+requests>=2.31
